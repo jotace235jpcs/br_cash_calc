@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/stylus.css">
+    <!-- <script src="js/main.js"></script> -->
+    <script>
+      var appfoo = {};
+      appfoo.changeColor = function(el){
+        let bd = document.body.style;
+        bd.backgroundColor = el.value;
+      }
+    </script>
+    <title>Título SEO</title>
+    <style>
+      body {
+        background-color: #ff9966;
+        text-shadow: #fff 1px 1px 1px;
+      }
+    </style>
+  </head>
+<body>
+  <main>
+    <label>Choose background color:</label>
+    <select id="colorlist" onchange="appfoo.changeColor(this);">
+      <option selected="selected" value="#ff9966">atomic tangerine</option>
+      <option value="#faebd7">AntiqueWhite</option>
+      <option value="#000000">black</option>
+      <option value="#bdb76b">DarkKhaki</option>
+      <option value="#a9a9a9">DarkGrey</option>
+      <option value="#f5deb3">Wheat</option>      
+      <option value="#ffffff">white</option>
+    </select>
+    <section>
+      <h1>Documento</h1>
+      <article>
+        <h2>Artigo Principal</h2>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
