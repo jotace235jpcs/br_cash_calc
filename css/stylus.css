@@ -3,3 +3,31 @@ body {
   color: #675d4c;
   background-color: #e0d7c5;
 }
+
+.tabela {
+  display: grid;
+  background-color: gray;
+  padding: 10px;
+  margin-left: 8em;
+  margin-right: 8em;
+  grid-template-columns: auto auto auto;
+}
+
+.tabela > div {
+  background-color: white;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.nota > img {
+  width: 50%;
+}
+
+.moeda > img {
+  width: 25%;
+}
+
+.test23232 {
+  border: 2px solid black;
+  padding: 32px;
+}
