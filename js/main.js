@@ -1,14 +1,18 @@
 (function(){
   "use strict";
-
-  let filterText = function(el){
-    let t = el.target;
-    let onlyNum = /[^\d]/gi;
-    t.value = t.value.replace(onlyNum, '');
+  
+  // Prevent input non-numeric characteres
+  let onlyNumbers = function(e){
+    let regexNum = /[\d]/; // regex for numbers
+    if (!onlyNum.test(e.key) && e.key !== 'Backspace' && e.key !== 'Delete') {
+      e.preventDefault();
+    }
   }
-    
+  
   let inputEl = document.getElementById('totalchange');
-  inputEl.addEventListener('input', filterText);
+  inputEl.addEventListener('keydown', filterText);
   
   
 })();
+
+
